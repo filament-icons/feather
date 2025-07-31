@@ -3,7 +3,7 @@
     "description": "Feather Icons icon set for Filament",
     "type": "library",
     "license": "MIT",
-    "homepage": "https://github.com/filament-icon-sets/feather",
+    "homepage": "https://github.com/filament-icons/feather",
     "authors": [
         {
             "name": "Dennis Koch",
@@ -27,6 +27,6 @@
         }
     },
     "support": {
-        "source": "https://github.com/filament-icon-sets/feather"
+        "source": "https://github.com/filament-icons/feather"
     }
 }
