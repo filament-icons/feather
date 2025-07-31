@@ -2,7 +2,10 @@
 
 namespace FilamentIcons\Feather;
 
-enum Feather: string
+use Filament\Support\Contracts\ScalableIcon;
+use Filament\Support\Enums\IconSize;
+
+enum Feather: string implements ScalableIcon
 {
     case Activity = 'activity';
     case Airplay = 'airplay';
@@ -291,4 +294,10 @@ enum Feather: string
     case Zap = 'zap';
     case ZoomIn = 'zoom-in';
     case ZoomOut = 'zoom-out';
+
+
+    public function getIconForSize(IconSize $size): string
+    {
+        return "feather-{$this->value}";
+    }
 }
